@@ -1,0 +1,39 @@
+site.url: "https://dhruvacadmy1-ui.github.io/DigiDhruv"
+site.title: "DigiDhruv"
+site.description: "Empower your future with DigiDhruv! Premium digital education through short, bite-sized methods"
+site.author: "dhruvacadmy1-ui"
+
+# Theme
+theme: jekyll-theme-minimal
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude files from the build
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /docs/:path/
+
+# Navigation
+header_links:
+  - title: Home
+    url: /
+  - title: Game
+    url: /game/
+  - title: Documentation
+    url: /docs/
+  - title: About
+    url: /about/
