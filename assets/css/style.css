@@ -1,0 +1,148 @@
+/* Game-Specific Styles */
+#game-container {
+  background: linear-gradient(135deg, #f5f7fa 0%, #eef2f7 100%);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+#start-screen {
+  text-align: center;
+}
+
+#start-screen p {
+  font-size: 24px;
+  margin: 30px 0;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+#game-ui {
+  text-align: center;
+}
+
+.level {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #3498db;
+  animation: fadeIn 0.5s ease-in;
+}
+
+#question {
+  font-size: 48px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #2c3e50;
+  animation: slideIn 0.5s ease-out;
+}
+
+input#answer {
+  padding: 15px;
+  width: 150px;
+  font-size: 32px;
+  border: 3px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input#answer:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.2);
+}
+
+.feedback-box {
+  height: 60px;
+  margin-top: 20px;
+  font-size: 22px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.correct {
+  color: #27ae60;
+  animation: bounce 0.5s ease;
+  font-weight: bold;
+}
+
+.wrong {
+  color: #e74c3c;
+  animation: shake 0.4s ease;
+  font-weight: bold;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Leaderboard Styles */
+#game-container ol {
+  text-align: left;
+  display: inline-block;
+  font-size: 18px;
+  margin: 20px 0;
+  padding: 0 30px;
+}
+
+#game-container li {
+  margin: 10px 0;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  list-style-position: inside;
+}
+
+#game-container h1 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#game-container h3 {
+  font-size: 22px;
+  color: #3498db;
+  margin: 20px 0 15px;
+}
+
+#game-container hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 2px solid #ddd;
+}
+
+.game-wrapper {
+  width: 100%;
+}
+
+.start-text {
+  font-size: 24px !important;
+  margin: 30px 0 !important;
+}
